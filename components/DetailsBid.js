@@ -1,8 +1,5 @@
 import React from "react";
-import {View, Text, Image } from "react-native";
-import { EthPrice } from "./SubInfo";
-
-
+import { View, Text, Image } from "react-native";
 import { EthPrice } from "./SubInfo";
 import { COLORS, SIZES, FONTS } from "../constants";
 
@@ -11,9 +8,9 @@ const DetailsBid = ({ bid }) => {
        <View
           style = {{
               width: "100%",
-              flexDirection: "row";
-              justifyContent: "space-between";
-              alignItems: "center";
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
               marginVertical: SIZES.base,
               paddingHorizontal: SIZES.base,
           }}
@@ -22,7 +19,7 @@ const DetailsBid = ({ bid }) => {
           <Image 
               source = {bid.image}
               resizeMode = "contain"
-              sstyle = {{ width: 48, height: 48 }}
+              style = {{ width: 48, height: 48 }}
           />
           <View 
              style = {{
@@ -34,7 +31,7 @@ const DetailsBid = ({ bid }) => {
           <Text
               style = {{
                   fontFamily: FONTS.semiBold,
-                  fontsSize: SIZES.small,
+                  fontSize: SIZES.small,
                   color:  COLORS.primary,
               }}
            >

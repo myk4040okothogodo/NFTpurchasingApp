@@ -128,6 +128,7 @@ export const SubInfo = () => {
     >
     <People /> 
     <EndDate />
+    </View>
   );
 };
 

@@ -19,5 +19,5 @@ export {
   NFTTitle,
   DetailsBid,
   FocusedStatusBar,
-  DetailsDesc
+  DetailsDesc,
 };

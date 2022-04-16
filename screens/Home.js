@@ -6,13 +6,18 @@ import { COLORS, NFTData } from "../constants";
 const Home = () => {
   const [nftData, setNftData] = useState(NFTData);
 
+  {/*
+ React.useEffect(() => {
+    setNftData(NFTData);
+  },[])
+ */}
   const handleSearch = (value) => {
      if (value.length === 0) {
         setNftData(NFTData);
      }
 
     const filteredData = NFTData.filter((item) => 
-      item.name.toLowerCase().includes(value.toLOwerCase())
+      item.name.toLowerCase().includes(value.toLowerCase())
   
     );
 

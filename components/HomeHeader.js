@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, Image, TextInput} from 'react-native';
-import { COLOR, FONTS, SIZES, assets} from '../constants';
+import { COLORS, FONTS, SIZES, assets} from '../constants';
 
 
 const HomeHeader = ({ onSearch }) => {
@@ -66,9 +66,9 @@ const HomeHeader = ({ onSearch }) => {
         <View style={{ marginTop: SIZES.font}}>
            <View
               style = {{
-                width: "100%"
+                width: "100%",
                 borderRadius: SIZES.font,
-                backgroundColor: COLOR.gray,
+                backgroundColor: COLORS.gray,
                 flexDirection: "row",
                 alignItems: "center",
                 paddingHorizontal: SIZES.font,
@@ -84,7 +84,7 @@ const HomeHeader = ({ onSearch }) => {
                  placeholder="Search NFTs"
                  style = {{ flex: 1 }}
                  onChangeText = {onSearch}
-             >
+             />
           </View>  
         </View>
       </View>
