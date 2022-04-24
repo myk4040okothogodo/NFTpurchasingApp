@@ -47,7 +47,7 @@ const Home = () => {
                 -1,
                 0,
                 ITEM_SIZE * index,
-                ITEM_SIZE * (index +  .5)
+                ITEM_SIZE * (index +  .6)
               ];
               const scale = scrollY.interpolate({
                 inputRange,

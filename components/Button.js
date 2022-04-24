@@ -1,6 +1,6 @@
 import React from "react";
 import {TouchableOpacity, Text, Image} from "react-native";
-import { COLORS, SIZES, FONTS, SHADOWs} from "../constants";
+import { COLORS, SIZES, FONTS, SHADOWS} from "../constants";
 
 export const CircleButton = ({ imgUrl, handlePress, ...props }) => {
   return (
@@ -43,7 +43,7 @@ export const RectButton = ({ minWidth, fontSize, handlePress, ...props }) => {
       style ={{
         fontFamily: FONTS.semiBold,
         fontSize: fontSize,
-        color: COLOR.white,
+        color: COLORS.white,
         textAlign: "center",  
       }}
     > place a bid</Text>
